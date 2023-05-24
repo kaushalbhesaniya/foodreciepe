@@ -12,7 +12,9 @@ const MealDetailsPage = () => {
   const { categories, dispatch, meal, categoryLoading, mealLoading } = useMealContext();
 
   useEffect(() => {
+
     startFetchSingleMeal(dispatch, id);
+    // eslint-disable-next-line
   }, [id]);
 
   let ingredientsArr = [], measuresArr = [], singleMeal = {};
